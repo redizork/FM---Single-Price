@@ -1,0 +1,181 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+/* Global Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #e5eff5;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  /* padding: 2rem; */
+}
+
+/* PRICE COMPONENT */
+.price-component {
+  max-width: 800px;
+  box-shadow: 0 20px 30px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.join {
+  padding: 5rem;
+  background-color: white;
+}
+
+.join h1 {
+  font-size: 4rem;
+  color: #2ab2af;
+  margin-bottom: 2rem;
+}
+
+.join h2 {
+  font-size: 3rem;
+  color: #c0df34;
+  margin-bottom: 1.3rem;
+}
+
+.join p {
+  font-size: 2rem;
+  color: #98a6bd;
+  line-height: 1.5;
+}
+
+.two-col {
+  display: flex;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #2ab2af;
+  padding: 5rem;
+  color: #e5eff5;
+  flex: 1;
+}
+
+.subscription-price h3 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.dollar {
+  font-size: 4.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.month {
+  font-size: 2.5rem;
+  opacity: 0.8;
+  margin-left: 2rem;
+  font-weight: 100;
+}
+
+.access {
+  font-size: 1.9rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  border: none;
+  font-family: "Karla", sans-serif; /*na btn se mora dodat familija */
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #c0df34;
+  color: #e5eff5;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 700;
+  box-shadow: 0 20px 30px rgb(0 0 0 / 10%);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #c0df34;
+  transform: translateY(-5px);
+}
+
+.why {
+  background-color: #4abebd;
+  padding: 5rem;
+  flex: 1;
+
+  color: #e5eff5;
+}
+
+.why h3 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.why ul {
+  font-size: 2rem;
+  list-style-type: none;
+  opacity: 0.8;
+}
+
+.why ul li {
+  margin-bottom: 1rem;
+}
+
+.why li:last-child {
+  margin-bottom: 0;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 800px) {
+  .price-component {
+    margin: 2rem;
+  }
+  .two-col {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .join h1 {
+    font-size: 3rem;
+  }
+
+  .join h2 {
+    font-size: 2rem;
+  }
+
+  .join p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+  }
+
+  .subscription-price h3 {
+    font-size: 2rem;
+  }
+
+  .why h3 {
+    font-size: 2rem;
+  }
+
+  .why ul {
+    font-size: 1.5rem;
+  }
+}
